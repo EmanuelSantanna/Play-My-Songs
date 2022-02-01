@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <title>Play My Song</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="validar.js" type="text/javascript"></script>
+        <link href="Style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <h3>Ouvir músicas</h3>
+            <div class="mainpage">                
+                <form  class="form" onsubmit="mostraMusica(this)" id="fdados" method="POST" name="fdados" enctype="multipart/form-data">
+                    <div >
+                        <input class="form" type="text" name="musica" id="musica" class="form-control" placeholder="Nome da Música, Cantor ou Estilo Musical" value="">
+                    </div>
+                    <button class="btn" type="submit" >Pesquisar</button><br>
+                    <a href="index.html">Registrar musicas</a>
+                </form>                    
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </body>
+</html>

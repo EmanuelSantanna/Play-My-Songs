@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Play My Song</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="validar.js" type="text/javascript"></script>
+        <link href="Style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div> 
+            <h3>Play My Songs<img src="icon.png" class="logos"</img></h3> 
+                <div class="mainpage">                    
+                    <form onsubmit="GravaDadosFoto()" id="fdados" method="POST" name="fdados" enctype="multipart/form-data">
+                        <div class="form">
+                            <input class="form" type="text" name="musica" id="musica" placeholder="Nome da Música" value="">
+                        </div>
+                        <div class="form">
+                            <input class="form" type="text" name="cantor" id="cantor" placeholder="Cantor/Banda" value="">
+                        </div><br>
+                        <div class="generos">
+                            <input type="radio" id="Rock" name="Gen" value="Rock" checked>
+                            <label for="nome">Rock</label>
+                            <input type="radio" id="Pop" name="Gen" value="Pop">
+                            <label for="nome">Pop</label>
+                            <input type="radio" id="Sertanejo" name="Gen" value="Sertanejo">
+                            <label for="nome">Sertanejo</label>
+                            <input type="radio" id="Funk" name="Gen" value="Funk">
+                            <label for="nome">Funk</label>
+                            <input type="radio" id="Eletronica" name="Gen" value="Eletronica">
+                            <label for="nome">Eletrônica</label>
+                            <input type="radio" id="Reggae" name="Gen" value="Reggae">
+                            <label for="nome">Reggae</label>   
+                            <input type="radio" id="MPB" name="Gen" value="MPB">
+                            <label for="nome">MPB</label> 
+                            <input type="radio" id="KPOP" name="Gen" value="KPOP">
+                            <label for="nome">KPop</label>  
+                            <input type="radio" id="Religiosa" name="Gen" value="Religiosa">
+                            <label for="nome">Religiosa</label>
+                        </div><br>
+                        <div>
+                            <h3>Arquivo da Música:</h3>
+                                <input type="file" id="foto" name="foto" accept=".mp3">
+                        </div><br>
+                        <div>
+                            <button class="btn" type="submit">Registrar Música</button>
+                            <br>
+                            <a href="Ouvir_musica.html">Ouvir Músicas</a>
+                        </div>
+                                                
+                    </form>
+                    <div id="resultado"></div>
+                </div>
+        </div>
+    </body>
+</html>
